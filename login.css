@@ -1,0 +1,193 @@
+@font-face {
+    font-family: fb;
+    src: url("./font/NBInternationalProBoo.ttf");
+}
+@font-face {
+    font-family: cha;
+    src: url("./font/Rejouice-Headline.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/pieces-chocolate-tablet-black-wooden-table-cacao-sprinkled-top.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+nav{
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    background-color: #F95D37;
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    padding: 40px 60px;
+    backdrop-filter: blur(7px);
+    margin-bottom:6vh;
+    }
+    nav,h3{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    nav,a h4{
+        font-size: 18px;
+        color: white;
+        font-weight: 100;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    #nav-right{
+        display: flex;
+        gap: 0.8vw;
+        align-items: center;
+        
+    }
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+form {
+  display:flex ;
+  flex-direction: column;
+}
+h2{
+  font-size:2rem ;
+  margin-bottom: 20px;
+  color:#fff;
+}
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+/* span .error{
+  color: red;
+  text-align: right;
+} */
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.error{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+    color: red;
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+}
+
+#remember {
+  accent-color: #fff;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label p {
+  margin-left: 8px;
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: #F95D37;
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  bottom:0;
+  left: 0;
+  position:fixed;
+  width: 100%;
+  background-color: #F95D37;
+  color: white;
+}
+@media screen and 
+(max-width:600px) { 
+    nav{
+        flex-direction: column;
+    }
+
+     nav{
+        width: 80%;
+    }
+    
+}

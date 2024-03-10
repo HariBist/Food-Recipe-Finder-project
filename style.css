@@ -1,0 +1,246 @@
+@font-face {
+    font-family: fb;
+    src: url("./font/NBInternationalProBoo.ttf");
+}
+@font-face {
+    font-family: cha;
+    src: url("./font/Rejouice-Headline.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fb;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0); */
+    position: relative;
+z-index: 10;
+color: #fff;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-between;
+padding-bottom: 5vw;
+
+}
+nav{
+/* height: 100px; */
+align-items: center;
+height: 40px;
+width: 100%;
+/* background-color: #F95D37; */
+justify-content: space-between;
+display: flex;
+color: #fff;
+padding: 40px 60px;
+ /* position: fixed;
+overflow: hidden;
+top: 0; */
+}
+nav,h3{
+    font-size: 18px;
+    font-weight: 100;
+}
+nav,a h4{
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+}
+nav a{
+    text-decoration: none;
+}
+#nav-right{
+    display: flex;
+    gap: 0.8vw;
+    align-items: center;
+    
+}
+#Signup{
+padding: 0.5vw;
+margin: 0.3vw;
+color: white;
+background-color: rgba(241, 237, 237,0.0);
+font-weight: 100;
+text-decoration: none;
+}
+#login{
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 0.3vw;
+    color: white;
+    background-color: rgba(241, 237, 237,0.0);
+    font-weight: 100;
+    text-decoration: none;
+    }
+
+
+#page1-content h1{
+font-family: cha;
+font-size: 29vw;
+font-weight: 100;
+line-height: 27vw;
+ background-size: cover;
+/* background: url(./images/foodiesfeed.com_vegan-curry-with-rice-on-a-plate.jpg)50% 50%;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;  */
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding: 5vw 2.8vw;
+    background-image: url('./images/foodiesfeed.com_fresh-vegetables.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#page2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.214);
+}
+#page2-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid white;
+}
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+}
+#page2-main{
+    font-size: 2vw;
+    width: 100%;
+    font-weight: 500;
+    padding-top: 3vw;
+    text-align: center;
+
+}
+#page2-main span{
+color: #F95D37;
+text-decoration: underline;
+}
+#page2-top span{
+    color: #F95D37;
+    text-decoration: underline;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    color: white;
+    background-image: url('./images/pieces-chocolate-tablet-black-wooden-table-cacao-sprinkled-top.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#page3-top{
+    text-align: center;
+    border-bottom: 1px solid white;
+    font-weight: 500;
+    margin-bottom: 1vw;
+
+}
+#page3-top h2{
+    font-size: 3vw;
+    font-weight: 500;
+}
+#page3-top h4{
+    font-weight: 500;
+    font-size: 1.5vw ;
+}
+#page3-top h4 span{
+    color: #F95D37;
+    font-size: 1.7vw;
+}
+#page3-elements{
+    height: 65vh;
+    width: 100%;
+    margin-top: 7vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+}
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: all linear 0.8s;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-image: url('./images/golden-cutlery-with-textile-plate-dark-background-top-view.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+#page4-top{
+    width: 100%;
+    margin-top: 7vw;
+    border-bottom: 1px solid white;
+}
+#page4-top h2{
+align-items: center;
+text-align: center;
+margin-bottom: 1vw;
+font-size: 3vw;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    bottom:0;
+    left: 0;
+    position:fixed;
+    width: 100%;
+    background-color: #F95D37;
+    color: white;
+  }

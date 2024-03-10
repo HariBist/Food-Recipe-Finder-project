@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aahara Recipe</title>
+    <link rel="stylesheet" href="recipe.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AAHARA RECIPE</h1>   
+            <form id="searchForm">
+                <input type="text" placeholder="Search your recipes..." class="searchBox"/>
+                <button type="submit" class="searchbtn">Search
+                    <i class="fa fa-search" aria-hidden="true"></i></button>
+            </form> 
+            <div class="nav-top">
+            <a href="../welcome.php"class="nav-link"> <h3>Home</h3></a>
+               <!-- <a href="./recipe.html"class="nav-link"><h3>Find Recipe</h3> </a> -->
+               <a href="favRecipe.html"class="nav-link"> <h3>Favourite</h3> </a>   
+               <a href="../logout.php" type="button" id="login">Log Out</a>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="recipeContainer"></div>            
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">
+                    <i class="fa fa-window-close" aria-hidden="true"></i>
+                </button> 
+                <div class="recipe-details-content"></div>
+            </div>
+        </section>
+    </main>
+    <script src="common.js"></script>
+    <script src="favoriteRecipe.js"></script>
+</body>
+</html>

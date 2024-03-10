@@ -1,0 +1,147 @@
+@font-face {
+    font-family: fb;
+    src: url("./font/NBInternationalProBoo.ttf");
+}
+@font-face {
+    font-family: cha;
+    src: url("./font/Rejouice-Headline.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{ 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/foodi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+/* body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/foodi.jpg) ;
+    background-position: center;
+    background-size: cover;
+} */
+nav{
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    background-color: #F95D37;
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    padding: 40px 60px;
+    backdrop-filter: blur(7px);
+    margin-bottom:6vh;    
+    }
+    nav,h3{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    nav,a h4{
+        font-size: 18px;
+        color: white;
+        font-weight: 100;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    #nav-right{
+        display: flex;
+        gap: 0.8vw;
+        align-items: center;
+        
+    }
+.wrapper {
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    /* -webkit-backdrop-filter: blur(9px); */
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.input-field{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 15px 0;
+}
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+}
+.input-field input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+.input-field input:focus~label,
+.input-field input:valid~label{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+/* .error{
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+    color: red;
+} */
+button {
+    background:#ffff;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 2px solid transparent;
+    transition: 0.3s ease;
+}
+button:hover{
+    color: #ffff;
+    border-color: #ffff;
+    background: #F95D37;
+}
+/*Resposive*/
+@media screen and 
+(max-width:600px) { 
+    nav{
+        flex-direction: column;
+    }
+
+     nav{
+        width: 80%;
+    }
+    
+}
